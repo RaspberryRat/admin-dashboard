@@ -153,12 +153,22 @@ table {
 
   display: grid;
   grid-template-columns: 3fr 1fr;
-  grid-template-rows: 1fr 6fr;
+  grid-template-rows: 1.5rem 6fr;
 
   gap: 20px;
-
 }
 
+.area-title {
+  grid-row: 1;
+}
+
+.project-title {
+  grid-column: 1;
+}
+
+.annouce-title {
+  grid-column: 2;
+}
 
 .projects {
   display: grid;
@@ -191,7 +201,6 @@ table {
 
   grid-column: 1;
   grid-row: 1;
-
 }
 
 .project-writeup {
@@ -201,7 +210,6 @@ table {
 
   grid-column: 1 / 3;
   grid-row: 2;
-
 }
 
 .project > .user-buttons {
@@ -211,17 +219,7 @@ table {
   margin: 0;
   margin-right: 10px;
   margin-bottom: 10px;
-
-
 }
-
-.project > .user-buttons > button {
-
-}
-
-
-
-
 
 
 .dashboard-item {
@@ -235,3 +233,23 @@ table {
   padding-top: 20px;
 }
 
+.sidebar {
+  grid-column: 2;
+  grid-row: 2;
+
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.announcements {
+  grid-row: 1;
+
+  outline: 1px solid red;
+}
+
+
+.trending {
+  grid-row: 2;
+  outline: 1px solid red;
+
+}
