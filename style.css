@@ -101,7 +101,16 @@ table {
 
 .search-bar {
   grid-column: 1;
-  background-color: darkgrey;
+  align-self: center;
+  padding-left: 30px;
+  font: 2rem;
+}
+
+.search-bar > input {
+  width: 50%;
+  border-radius: 10px;
+  background-color: var(--gray);
+  border: 1px solid var(--gray);
 }
 
 .greeting-container {
