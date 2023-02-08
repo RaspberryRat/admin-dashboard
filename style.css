@@ -184,12 +184,16 @@ table {
 
 .project {
   background-color: white;
+  border-radius: 10px;
   max-height: 200px;
 
   display: grid;
   grid-template-rows: 2fr 5fr 1fr;
   grid-template-columns: 1fr;
   padding: 0;
+
+
+  border-left: 8px solid #f0b42a;
 }
 
 strong {
@@ -265,10 +269,27 @@ strong {
   color: var(--gray);
   filter: brightness(75%);
   font-size: 0.8rem;
+}
 
+.annouce-box:nth-child(2) {
+ /*  border-top: 1px solid var(--gray);
   border-bottom: 1px solid var(--gray);
-  /* TODO WORKING HERE BORDER NOT SHOWING */
+ */
 
+  z-index: 1;
+ position: relative;
+}
+
+.annouce-box:nth-child(2):after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 60%;
+  height: 1px;
+  border-bottom: 1.5px solid var(--gray);
+  left: 20%;
 }
 
 
