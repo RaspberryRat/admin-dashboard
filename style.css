@@ -103,11 +103,21 @@ table {
   grid-column: 1;
   align-self: center;
   padding-left: 30px;
-  font: 2rem;
+
+  display: grid;
+  grid-template-columns: 1fr 20fr;
 }
 
+#search-icon {
+  height: auto;
+  width: 20px;
+  padding: 0;
+}
+
+
+
 .search-bar > input {
-  width: 50%;
+  width: 60%;
   border-radius: 10px;
   background-color: var(--gray);
   border: 1px solid var(--gray);
@@ -365,3 +375,4 @@ strong {
   color: var(--gray);
   filter: brightness(75%);
 }
+
