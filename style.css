@@ -247,7 +247,7 @@ strong {
 .announcements {
   background-color: white;
   margin-bottom: 20px;
-
+  border-radius: 10px;
 
   grid-row: 1;
   display: grid;
@@ -275,6 +275,57 @@ strong {
 
 .trending {
   grid-row: 2;
-  outline: 1px solid red;
 
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 5fr;
+}
+
+.trending-title {
+  grid-row: 1;
+  grid-column: 1 / 3;
+}
+
+.trending-container {
+  grid-row: 2;
+  grid-column: 1 / 3;
+
+  display: grid;
+
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+
+  border: 1px solid white;
+  background-color: white;
+
+  border-radius: 10px;
+}
+
+.user-trending {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr 1fr;
+
+
+}
+
+.user-icon {
+  grid-row: 1 / 3;
+  grid-column: 1;
+}
+
+.user-name {
+  grid-row: 1;
+  grid-column: 2;
+}
+
+.user-app {
+  grid-row: 2;
+  grid-column: 2;
+}
+
+.user-name,
+.user-app {
+  color: var(--gray);
+  filter: brightness(75%);
 }
