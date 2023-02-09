@@ -176,6 +176,29 @@ table {
   padding: 0;
 }
 
+.notification {
+  grid-row: 1;
+}
+
+#user1 {
+  grid-row: 2;
+
+  padding-left: 70px;
+  align-self: center;
+  justify-self: end;
+  padding-right: 30px;
+
+  font-size: 1rem;
+}
+
+.user-info > .user-icon {
+  outline: 1px sold red;
+}
+
+.user-info > .user-name {
+  grid-row: 3;
+}
+
 
 
 .content-container {
@@ -186,14 +209,15 @@ table {
 
   display: grid;
   grid-template-columns: 3fr 1fr;
-  grid-template-rows: 1.5rem 6fr;
-
+  grid-template-rows: 1.5rem 6fr 0.3fr;
   gap: 3px;
 }
 
 .area-title {
   grid-row: 1;
   align-items: end;
+  font-size: 1.2rem;
+  font-weight: bolder;
 }
 
 .project-title {
@@ -364,6 +388,8 @@ strong {
   grid-row: 2;
   display: grid;
   grid-template-rows: 1fr 1fr;
+  padding: 0;
+  gap: 0;
 }
 
 .announcements {
@@ -417,11 +443,13 @@ strong {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 5fr;
+  gap: 10px;
 }
 
 .trending-title {
   grid-row: 1;
   grid-column: 1 / 3;
+  align-self: end;
 }
 
 .trending-container {
@@ -443,8 +471,18 @@ strong {
   display: grid;
   grid-template-columns: 1fr 3fr;
   grid-template-rows: 1fr 1fr;
+  padding: 20px;
+  padding-bottom: 30px;
+  gap: 8px;
+  align-items: end;
+}
 
+.user-trending > .user-icon {
+  margin-top: 50px;
+}
 
+.user-app {
+  align-self: start;
 }
 
 #user1 {
@@ -470,18 +508,19 @@ strong {
   grid-column: 1;
   height: 100%;
   width: auto;
+  align-self: end;
 
 }
 
 .user-info > .user-icon {
   grid-row: 1;
   width: 100%;
-  /* Icon not fitting properly */
 }
 
 .user-name {
   grid-row: 1;
   grid-column: 2;
+  align-self: end;
 }
 
 .user-app {
@@ -495,3 +534,6 @@ strong {
   filter: brightness(75%);
 }
 
+.footer {
+  grid-row: 3;
+}
