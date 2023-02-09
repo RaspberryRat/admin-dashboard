@@ -363,9 +363,17 @@ strong {
 .user-icon {
   grid-row: 1 / 3;
   grid-column: 1;
+  height: 100%;
+  width: auto;
 
-  background-image: no-repeat url("./icons/moose.svg");
-/* TODO WORKING HERE ICON NOT SHOWING! */
+  background: no-repeat url("./icons/moose.svg");
+}
+
+.user-info > .user-icon {
+  grid-row: 1;
+  width: 100%;
+  background-size: 60%;
+
 }
 
 .user-name {
