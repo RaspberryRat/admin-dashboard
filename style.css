@@ -360,20 +360,36 @@ strong {
 
 }
 
+#user1 {
+  background: no-repeat url("./icons/moose.svg");
+}
+
+#user2 {
+  background: no-repeat url("./icons/centaur-icon.svg");
+}
+
+#user3 {
+  background: no-repeat url("./icons/alien-icon.svg");
+}
+
+#user4 {
+  background: no-repeat url("./icons/tuna-can-icon.svg");
+}
+
+
+
 .user-icon {
   grid-row: 1 / 3;
   grid-column: 1;
   height: 100%;
   width: auto;
 
-  background: no-repeat url("./icons/moose.svg");
 }
 
 .user-info > .user-icon {
   grid-row: 1;
   width: 100%;
-  background-size: 60%;
-
+  /* Icon not fitting properly */
 }
 
 .user-name {
