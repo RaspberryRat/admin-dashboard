@@ -132,7 +132,13 @@ table {
 
 .greeting {
   align-self: end;
+  grid-row: 1;
 }
+
+.greeting-container > .user-name {
+  grid-row: 2;
+}
+
 .greeting-container > .user-icon {
   padding-left: 70px;
   align-self: center;
